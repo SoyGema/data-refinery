@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Módulos &mdash; Data Refinery 0.1.52 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Data Refinery 0.1.52 documentation" href="index.html"/>
+        <link rel="next" title="Glosario" href="glossary.html"/>
+        <link rel="prev" title="Tuple DSL documentation" href="dsl.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Data Refinery
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.52
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Instalación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thebasics.html">The Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsl.html">Tuple DSL documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Módulos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-datarefinery">datarefinery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datarefinery.Tr">datarefinery.Tr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datarefinery.FieldOperations">datarefinery.FieldOperations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datarefinery.tuple.Formats">datarefinery.tuple.Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datarefinery.tuple.TupleDSL">datarefinery.tuple.TupleDSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datarefinery.tuple.TupleOperations">datarefinery.tuple.TupleOperations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Data Refinery</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Módulos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/reference.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modulos">
+<h1>Módulos<a class="headerlink" href="#modulos" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-datarefinery">
+<span id="datarefinery"></span><h2>datarefinery<a class="headerlink" href="#module-datarefinery" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-datarefinery.Tr">
+<span id="datarefinery-tr"></span><h2>datarefinery.Tr<a class="headerlink" href="#module-datarefinery.Tr" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="datarefinery.Tr.Tr">
+<em class="property">class </em><code class="descclassname">datarefinery.Tr.</code><code class="descname">Tr</code><span class="sig-paren">(</span><em>func</em>, <em>next_tr=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>expected behaviour:</p>
+<p>Funct</p>
+<p>I       <a href="#id3"><span class="problematic" id="id4">|--&gt; I'
+|       |
+O -&gt; F -|</span></a>–&gt; O’
+|       |
+E       <a href="#id1"><span class="problematic" id="id2">|</span></a>–&gt; E’</p>
+<dl class="method">
+<dt id="datarefinery.Tr.Tr.apply">
+<code class="descname">apply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr.apply"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr.apply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datarefinery.Tr.Tr.init">
+<code class="descname">init</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr.init"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datarefinery.Tr.Tr.peek">
+<code class="descname">peek</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr.peek"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr.peek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datarefinery.Tr.Tr.reader">
+<code class="descname">reader</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr.reader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr.reader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datarefinery.Tr.Tr.then">
+<code class="descname">then</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr.then"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr.then" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datarefinery.Tr.Tr.writer">
+<code class="descname">writer</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/Tr.html#Tr.writer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.Tr.Tr.writer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-datarefinery.FieldOperations">
+<span id="datarefinery-fieldoperations"></span><h2>datarefinery.FieldOperations<a class="headerlink" href="#module-datarefinery.FieldOperations" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="datarefinery.FieldOperations.add_column_prefix">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">add_column_prefix</code><span class="sig-paren">(</span><em>prefix</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#add_column_prefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.add_column_prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.buckets_grouping">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">buckets_grouping</code><span class="sig-paren">(</span><em>*buckets: float</em><span class="sig-paren">)</span> &#x2192; typing.Callable[float, typing.Tuple[typing.Union[int, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/FieldOperations.html#buckets_grouping"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.buckets_grouping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a function that gives the index of the value using a group interval by provided input.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>buckets</strong> – float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Callable</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.column_category">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">column_category</code><span class="sig-paren">(</span><em>categories: typing.List[T]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[T, typing.Tuple[typing.Union[dict, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/FieldOperations.html#column_category"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.column_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a function that gives a categorization value vectorized (see: one hot vector).
+This categorization is a substitution the given value by a vector with all categories and 1 in the category
+supplied.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>categories</strong> – list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Optional[str]</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.date_parser">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">date_parser</code><span class="sig-paren">(</span><em>date_formats: list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#date_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.date_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.explode">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">explode</code><span class="sig-paren">(</span><em>prefix: str</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#explode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.explode" title="Permalink to this definition">¶</a></dt>
+<dd><p>given an array of objects de-normalized into fields</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.explode_date">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">explode_date</code><span class="sig-paren">(</span><em>date: datetime.datetime</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#explode_date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.explode_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.explode_time">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">explode_time</code><span class="sig-paren">(</span><em>time: datetime.time</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#explode_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.explode_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.linear_category">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">linear_category</code><span class="sig-paren">(</span><em>categories: typing.List[T]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[T, typing.Tuple[typing.Union[int, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/FieldOperations.html#linear_category"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.linear_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a function that gives a categorization value.
+This categorization is a substitution the given value by a numeric representation in the category supplied.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>categories</strong> – List</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Callable</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.match_dict">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">match_dict</code><span class="sig-paren">(</span><em>dictionary</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#match_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.match_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.min_max_normalization">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">min_max_normalization</code><span class="sig-paren">(</span><em>min_value: float</em>, <em>max_value: float</em><span class="sig-paren">)</span> &#x2192; typing.Callable[float, typing.Tuple[typing.Union[float, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/FieldOperations.html#min_max_normalization"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.min_max_normalization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a function that apply a Rescaling normalization.
+Rescaling normalization - Normalization based on the mininum and maximum value of the given value.
+It’s like rescale the value</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>min_value</strong> – float</li>
+<li><strong>max_value</strong> – float</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Callable</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.remove_columns">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">remove_columns</code><span class="sig-paren">(</span><em>*columns_to_remove: str</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#remove_columns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.remove_columns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.replace_if">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">replace_if</code><span class="sig-paren">(</span><em>func</em>, <em>replacement</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#replace_if"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.replace_if" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.replace_if_else">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">replace_if_else</code><span class="sig-paren">(</span><em>fn_cond</em>, <em>fn_then</em>, <em>fn_else=&lt;function &lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#replace_if_else"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.replace_if_else" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.std_score_normalization">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">std_score_normalization</code><span class="sig-paren">(</span><em>average: float</em>, <em>std_deviation: float</em><span class="sig-paren">)</span> &#x2192; typing.Callable[float, typing.Tuple[typing.Union[float, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/FieldOperations.html#std_score_normalization"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.std_score_normalization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a function that apply a Standardization normalization.
+Standardization normalization - Normalization based on the average and standard deviation of the given values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>average</strong> – float</li>
+<li><strong>std_deviation</strong> – float</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Callable[[float], Tuple[Optional[float], Optional[str]]]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.time_parser">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">time_parser</code><span class="sig-paren">(</span><em>formats: list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/FieldOperations.html#time_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.time_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.FieldOperations.type_enforcer">
+<code class="descclassname">datarefinery.FieldOperations.</code><code class="descname">type_enforcer</code><span class="sig-paren">(</span><em>enforcer_function: typing.Callable[T, U]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[T, typing.Tuple[typing.Union[~U, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/FieldOperations.html#type_enforcer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.FieldOperations.type_enforcer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a function that cast from one type to another.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enforcer_function</strong> – Callable</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Callable</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-datarefinery.tuple.Formats">
+<span id="datarefinery-tuple-formats"></span><h2>datarefinery.tuple.Formats<a class="headerlink" href="#module-datarefinery.tuple.Formats" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="datarefinery.tuple.Formats.csv_to_map">
+<code class="descclassname">datarefinery.tuple.Formats.</code><code class="descname">csv_to_map</code><span class="sig-paren">(</span><em>fields</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/Formats.html#csv_to_map"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.Formats.csv_to_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert csv to dict</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fields</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.Formats.from_json">
+<code class="descclassname">datarefinery.tuple.Formats.</code><code class="descname">from_json</code><span class="sig-paren">(</span><em>i</em>, <em>o</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/Formats.html#from_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.Formats.from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert json to dict</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>i</strong> – </li>
+<li><strong>o</strong> – </li>
+<li><strong>e</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.Formats.map_to_csv">
+<code class="descclassname">datarefinery.tuple.Formats.</code><code class="descname">map_to_csv</code><span class="sig-paren">(</span><em>fields</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/Formats.html#map_to_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.Formats.map_to_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert dict to csv</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fields</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.Formats.to_json">
+<code class="descclassname">datarefinery.tuple.Formats.</code><code class="descname">to_json</code><span class="sig-paren">(</span><em>i</em>, <em>o</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/Formats.html#to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.Formats.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert dict to json</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>i</strong> – </li>
+<li><strong>o</strong> – </li>
+<li><strong>e</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-datarefinery.tuple.TupleDSL">
+<span id="datarefinery-tuple-tupledsl"></span><h2>datarefinery.tuple.TupleDSL<a class="headerlink" href="#module-datarefinery.tuple.TupleDSL" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.apply_over_output">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">apply_over_output</code><span class="sig-paren">(</span><em>fun</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#apply_over_output"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.apply_over_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.compose">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">compose</code><span class="sig-paren">(</span><em>*funcs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#compose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.compose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.dict_enforcer">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">dict_enforcer</code><span class="sig-paren">(</span><em>i</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#dict_enforcer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.dict_enforcer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.read_field">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">read_field</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#read_field"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.read_field" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.read_fields">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">read_fields</code><span class="sig-paren">(</span><em>fields</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#read_fields"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.read_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.read_match">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">read_match</code><span class="sig-paren">(</span><em>regexp</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#read_match"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.read_match" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.use_input">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">use_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#use_input"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.use_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.use_output">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">use_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#use_output"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.use_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.write_error_field">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">write_error_field</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#write_error_field"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.write_error_field" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleDSL.write_field">
+<code class="descclassname">datarefinery.tuple.TupleDSL.</code><code class="descname">write_field</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleDSL.html#write_field"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleDSL.write_field" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-datarefinery.tuple.TupleOperations">
+<span id="datarefinery-tuple-tupleoperations"></span><h2>datarefinery.tuple.TupleOperations<a class="headerlink" href="#module-datarefinery.tuple.TupleOperations" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.alternative">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">alternative</code><span class="sig-paren">(</span><em>*alternatives</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#alternative"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.alternative" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.append">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">append</code><span class="sig-paren">(</span><em>fields: typing.List[str], etl_func: typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#append"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.chain">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">chain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#chain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.chain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.change">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">change</code><span class="sig-paren">(</span><em>fields: typing.List[str], etl_func: typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#change"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.filter_tuple">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">filter_tuple</code><span class="sig-paren">(</span><em>fields: typing.List[str], etl_func: typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#filter_tuple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.filter_tuple" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.fusion">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">fusion</code><span class="sig-paren">(</span><em>fields: typing.List[str], target_field: str, etl_func: typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#fusion"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.fusion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.fusion_append">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">fusion_append</code><span class="sig-paren">(</span><em>fields: typing.List[str], error_field: str, etl_func: typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#fusion_append"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.fusion_append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.keep">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">keep</code><span class="sig-paren">(</span><em>fields</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#keep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.keep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.keep_regexp">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">keep_regexp</code><span class="sig-paren">(</span><em>regexp</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#keep_regexp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.keep_regexp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.recover">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">recover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#recover"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.recover" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.substitution">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">substitution</code><span class="sig-paren">(</span><em>fields: typing.List[str], etl_func: typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[[dict, dict, dict], typing.Tuple[[dict, dict], dict]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#substitution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.substitution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="datarefinery.tuple.TupleOperations.wrap">
+<code class="descclassname">datarefinery.tuple.TupleOperations.</code><code class="descname">wrap</code><span class="sig-paren">(</span><em>func: typing.Callable[typing.Any, typing.Any]</em><span class="sig-paren">)</span> &#x2192; typing.Callable[typing.Any, typing.Tuple[typing.Union[typing.Any, NoneType], typing.Union[str, NoneType]]]<a class="reference internal" href="_modules/datarefinery/tuple/TupleOperations.html#wrap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datarefinery.tuple.TupleOperations.wrap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="glossary.html" class="btn btn-neutral float-right" title="Glosario" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dsl.html" class="btn btn-neutral" title="Tuple DSL documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, BBVA-Labs.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.52',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

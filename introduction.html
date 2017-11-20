@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introducción &mdash; Data Refinery 0.1.52 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Data Refinery 0.1.52 documentation" href="index.html"/>
+        <link rel="next" title="Instalación" href="installation.html"/>
+        <link rel="prev" title="Welcome to Data Refinery’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Data Refinery
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.52
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivacion">Motivación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#soluciones">Soluciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apoyo-en-lo-existente-no-sustitucion">Apoyo en lo existente, no sustitución</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enfocado-desde-el-streaming">Enfocado desde el streaming</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Instalación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thebasics.html">The Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsl.html">Tuple DSL documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Data Refinery</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introducción</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="motivacion">
+<h2>Motivación<a class="headerlink" href="#motivacion" title="Permalink to this headline">¶</a></h2>
+<p>El análisis de datos es una tarea que se ha extendido rápidamente por las empresas modernas. Hoy en día nadie niega el valor que aportan los datos al conocimiento interno al desarrollo de negocio. La tecnología a nuestra disposición nos facilita la captura de datos y su procesamiento, aunque el tamaño de los mismos parezca inmanejable. Por otro lado una gran cantidad de librerías científicas nos permiten hacer maravillas con los datos que tenemos en nuestra máquina, siempre que entren en la memoria de la máquina.</p>
+<p>&gt; Pero no puedo evitar pensar en este vacío intermedio entre el trabajo en local y el trabajo en grandes centros de proceso. Y lo visualizo como un valle yermo.</p>
+<p>Que inevitablemente tenemos que recorrer cada vez que una hipótesis prometedora debe ser llevada al mundo real. Yo llamo a este trabajo <strong>el valle de la soledad</strong>. La popularidad entre los científicos de datos de las librerías más enfocadas al procesamiento local, que agilizan su trabajo, provocan en la mayoría de los casos un esfuerzo considerable cuando las intentamos encajar en el cluster; en muchas ocasiones en mi carrera profesional me he encontrado traduciendo código en R o Python a Java o Escala. No porque el lenguaje en sí sea determinante, sino porque es el que usa el framework de procesamiento big data que típicamente tiene el cliente instalado en sus servidores.</p>
+<p>En mi opinión cuanto más pequeñas y sencillas sean las operaciones de transformación de datos más sencillo es el paso por el valle de la soledad. Con la inclusión de Python en Spark se abre además la puerta de usar el mismo lenguaje (aunque el código pueda variar).</p>
+<div class="section" id="soluciones">
+<h3>Soluciones<a class="headerlink" href="#soluciones" title="Permalink to this headline">¶</a></h3>
+<p>Mucha gente a la que le pregunto cómo está solucionando su viaje por el valle de la soledad usa directamente los frameworks big data en la máquina de desarrollo local. Es una opción totalmente respetable, pero tiene un coste asociado, en mi opinión bastante limitante. Cada vez que llevamos a cabo una prueba debemos pagar el peaje del framework; que no es más que la infraestructura que monta para ofrecerte una escalabilidad que no estas usando, y que muy probablemente no usarás, ya que muchas de las hipótesis que se están probando no llegarán nunca a producción.
+Otra opción popular es la de usar los datos y el cluster de verdad. Pero eso también tiene un coste asociado alto; puede impactar en procesos productivos, si no tienes duplicada la información e infraestructura; y para mayor dificultad los cluster y frameworks big data están diseñados para exprimir al máximo los recursos y no responden bien a la pugna de recursos típica de un sistema multiusuario.</p>
+<p>No hay una solución sencilla o general para este problema, y cada problema tiene sus peculiaridades que pueden invalidar totalmente una aproximación. Por ejemplo, quiero desarrollar con el cluster real, pero hay tantos datos que hace que cada prueba me lleve días. O hay muy pocos datos pero estoy obligado a escribir mi código de nuevo porque el cluster usa la tecnología X.</p>
+<p>En mi opinión el único paliativo a este problema es ser lo más progresivo y automatizar para no tener que parar el trabajo de investigación del científico de datos por culpa de la tecnología. Cuando digo progresivo me refiero a que nuestro código tenga la capacidad de ser expuesto a cantidades cada vez mayores de datos de forma desatendida y que el científico de datos pueda consultar las métricas de desempeño y decidir si se progresa ese modelo para ser expuesto a más datos o no. La automatización debe permitir el manejo, selección y exposición de los datos a los modelos sin intervención humana. No solo para alcanzar mayor productividad, sino que esto permite una mayor seguridad de los datos.</p>
+<p>&gt;  En este punto se hace evidente la necesidad de un buen pipeline de datos.</p>
+</div>
+<div class="section" id="apoyo-en-lo-existente-no-sustitucion">
+<h3>Apoyo en lo existente, no sustitución<a class="headerlink" href="#apoyo-en-lo-existente-no-sustitucion" title="Permalink to this headline">¶</a></h3>
+<p>Si queremos tener éxito y ser competitivos necesitamos que nuestras estrategias sean rápidas y económicas. Y en el caso de la transformación de datos debemos apuntar a generar código que no sea ya facilitado por frameworks (que hacen muy bien esta tarea). Los frameworks de big data facilitan sobretodo el mover los datos de un sitio a otro; por ejemplo, leer de un csv y hacer un join con los datos de un Cassandra para alimentar un Elastic Search.</p>
+<p>&gt; Pero cuando queremos añadir un campo, o dividir una fecha entre sus campos individuales, queda totalmente en nuestras manos.</p>
+<p>De una forma similar las librerías científicas también te ayudan a cargar ficheros y a pintar gráficas. Pero cuando tenemos que hacer operaciones sobre campos, de nuevo, recae sobre nuestro código.</p>
+<p>Y es precisamente este código el que tediosamente provoca más trabajo. Dando lugar al valle de la soledad, cuando tenemos que estar adaptando código para pasar de un framework a otro, solos, sin ayuda alguna. La librería ETL viene a facilitarnos la vida con una base de código que podemos usar en cualquier punto del proceso. Aunque no siendo una solución completa, si que ha demostrado reducir el tiempo necesario para llevar a cabo los ELT necesarios y reducir drásticamente el tiempo necesario para adaptar el código de los frameworks locales al cluster de producción.</p>
+<p>Esto se consigue mediante el interfaz minimalista que usa. En lugar de pretender ser una solución global (como spark que cada vez aúna más funcionalidad) simplemente te entrega una sola función de código a la que le pasas los datos y te da los datos transformados en base a los metadatos que se le provee. Esto implica que la solución deja al framework el dimensionamiento, mientras que la función solo se preocupa de transformar los datos.</p>
+</div>
+<div class="section" id="enfocado-desde-el-streaming">
+<h3>Enfocado desde el streaming<a class="headerlink" href="#enfocado-desde-el-streaming" title="Permalink to this headline">¶</a></h3>
+<p>Esta decisión de diseño puede resultar muy alienante a aquellos más experimentados con soluciones ETL completas. En ocasiones me encuentro con comentarios como: “donde le paso los datos” o “como puedo recorrer una columna”. Para resolver este tipo de dudas debemos recordar que la librería trabaja a nivel de fila, o como se describe en las aplicaciones en streaming, a nivel de un solo evento. Un fichero normalmente está compuesto por muchos eventos, a si que tienes que extraer los eventos uno por uno y pasarlos por la función que te entrega la librería para obtenerlos transformados.</p>
+<p>Como hemos explicado la librería no va a abordar las tareas que ya hacen los frameworks especializados; porque lo hacen mejor de lo que podemos pretender nosotros. Pandas, por ejemplo, te permite cargar un fichero con una solo línea de código, y Spark también; te recomiendo usar uno de estos frameworks y mapear las filas con la función de la librería.</p>
+<p>En la cuestión de columna también hay cierta confusión, creo que debido a la forma común de trabajar con los datos que vienen estableciendo los dataframes en los últimos años. Estos son estructuras columnares, muy adecuados y eficientes cuando tenemos un fichero finito y completo de datos entre manos. Pero la librería de ETL, de nuevo, trabaja a nivel de evento, aproximación opuesta en principio al paradigma columnar, por lo que a priori implica un pequeño cambio de enfoque para los datascientist.</p>
+<p>&gt; Trabajar pensando en los eventos y no en las columnas de datos.</p>
+<p>Y está limitado en este aspecto porque está diseñado desde la suposición de que todos los datos son stream infinitos; lo que permite el poder pasar los datos de forma progresiva; también permite el ahorro de una gran cantidad de recursos de la máquina facilitando su uso en la máquina local o en entornos con los recursos limitados; y también ofrece una solución que funciona en streaming, de modo que es más sencillo de usar en entornos productivos, al mismo tiempo de que se puede usar como un batch tradicional con un pipe de linux.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Instalación" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Data Refinery’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, BBVA-Labs.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.52',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
